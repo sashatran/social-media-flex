@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+* {
+  margin: 0;
+}
+
+body {
+  background: #FFEE93;
+}
+
+nav {
+  width: 100%;
+  background: #439775;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .bar a {
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: 1px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+  background: #FFEE93;
+  color: #439775;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+.container div {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.container div:nth-child(1) {
+  background: #BCE784;
+}
+.container div:nth-child(2) {
+  background: #5DD39E;
+}
+.container div:nth-child(3) {
+  background: #1A936F;
+}
+.container div:nth-child(4) {
+  background: #4D9078;
+}
+.container div:nth-child(5) {
+  background: #87BBA2;
+}
+.container div:nth-child(6) {
+  background: #348AA7;
+}
+.container i {
+  font-size: 80px;
+  color: #FFF;
+}
+
+@media (min-width: 900px) {
+  .title {
+    font-size: 60px;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  .container div {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .container i {
+    font-size: 100px;
+  }
+}
